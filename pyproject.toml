@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "refund-autopay-race"
 version = "0.1.0"
 description = "A store refund racing an autopay charge on the same payment plan, settled without double charges or lost money."
+readme = "README.md"
 license = "MIT"
 authors = [{ name = "Mohammad Ghabin" }]
 requires-python = ">=3.12"
