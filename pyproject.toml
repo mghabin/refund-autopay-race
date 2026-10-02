@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "refund-autopay-race"
+version = "0.1.0"
+description = "A store refund racing an autopay charge on the same payment plan, settled without double charges or lost money."
+license = "MIT"
+authors = [{ name = "Mohammad Ghabin" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "hypothesis==6.168.3", "ruff==0.16.10"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
